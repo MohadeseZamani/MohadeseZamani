@@ -1,36 +1,43 @@
-# MohadeseZamani
+# Mohadese Zamani
 
-**AI Engineer focused on agentic data systems, spreadsheet intelligence, and applied machine learning.**
+**AI Engineer building stateful LLM workflows and applied ML systems.**
 
-I design reliable AI workflows that combine structured LLM outputs, deterministic data processing, human review, and event-driven services.
+I turn natural-language analysis requests into typed plans, validated artifacts, and user-facing interpretations. My work combines explicit workflow state, structured contracts, recovery paths, and human review with dependable Python and data systems.
+
+[Portfolio](https://mohadesezamani.github.io) · [Email](mailto:mohadesehzamani1380@gmail.com)
 
 ## Featured work
 
-### [Agentic Data Analysis Workflow](https://github.com/MohadeseZamani/agentic-data-analysis-design)
-A public-safe engineering case study about specialized agents, schema-validated handoffs, review loops, validation routing, and Human-in-the-Loop interactions for a data-analysis system.
+### [Designing an Auditable Hybrid Profiler for Irregular Spreadsheets](https://gist.github.com/MohadeseZamani/24340313bdffbc7fe3ad4e5e2a158c6d)
 
-**Focus:** Multi-agent orchestration · Prompt engineering · State and handoff contracts · Structured outputs · Validation routing
+An architecture note on recovering table structure from irregular workbooks with typed reconciliation candidates, bounded model review, deterministic validation, and explicit lineage.
 
-### [Spreadsheet Intelligence Demo](https://github.com/MohadeseZamani/spreadsheet-intelligence-demo)
-A runnable, non-proprietary miniature for detecting and profiling multiple data blocks across multi-sheet Excel workbooks. It demonstrates public-safe ideas from an independently developed profiling service for a Financial Assistant platform.
+`Architecture` · `Spreadsheet intelligence` · `Agentic systems` · `Data contracts`
 
-**Focus:** Excel block detection · Schema inference · Data profiling · Event contracts · HITL architecture
+[Open the architecture diagram](https://mohadesezamani.github.io/assets/auditable-profiler-architecture.svg)
 
-### [Customer Segmentation Lab](https://github.com/MohadeseZamani/customer-segmentation-lab)
-A reproducible experiment on synthetic customer data comparing clustering approaches and evaluating segment quality without exposing company data.
+### [Agentic Data Analysis Workflow](https://github.com/MohadeseZamani/agentic-data-analysis-workflow)
 
-**Focus:** K-Means · Gaussian Mixtures · Agglomerative Clustering · DBSCAN · Cluster evaluation
+A synthetic case study of a multi-agent analysis workflow. It covers typed handoffs, one run-level trace, stage-level attempts, validation routes, and human-review decisions.
+
+`Python` · `Pydantic` · `Structured outputs` · `Workflow state`
+
+### [Spreadsheet Intelligence Demo](https://github.com/MohadeseZamani/spreadsheet-intelligence-profiler)
+
+A synthetic workbook-profiling demo for multi-sheet Excel files with multiple data blocks. It covers region detection, header and schema inference, missing-value profiles, table classification, and cell-range lineage.
+
+`Python` · `openpyxl` · `Data profiling` · `Schema inference`
 
 ## What I work with
 
-- **Agentic AI:** workflow design, agent boundaries, handoffs, prompt design, structured outputs, reflection/retry loops, Human-in-the-Loop
-- **Data & ML:** Python, pandas, NumPy, scikit-learn, data profiling, customer segmentation, feature engineering
-- **Backend & Infrastructure:** RabbitMQ, MinIO/S3, PostgreSQL, event-driven services
+- **Agent systems:** LangGraph, multi-agent orchestration, structured generation, human-in-the-loop workflows
+- **Backend and data:** FastAPI, Pydantic, JSON Schema, PostgreSQL, RabbitMQ, MinIO/S3
+- **ML and analysis:** Python, SQL, pandas, NumPy, PyTorch, scikit-learn, PyArrow
+- **Engineering:** Docker, asynchronous processing, workflow state, validation, event-driven architecture
 
-## Engineering principles
+## How I approach the work
 
-- Use deterministic logic where repeatability matters.
-- Use LLMs only where semantic judgment adds value.
-- Make handoffs explicit and schema-validated.
-- Keep workflows observable, resumable, and testable.
-- Never publish client data, credentials, or proprietary source code.
+- Keep state and handoffs explicit.
+- Put validation and review inside the workflow.
+- Use deterministic processing where repeatability matters.
+- Save enough context to resume failed work safely.
